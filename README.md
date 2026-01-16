@@ -1,4 +1,4 @@
-**☁️ Automated AWS Resource Auditor(LocalStack Edition)**
+## **☁️ Automated AWS Resource Auditor(LocalStack Edition)**
 
 **📌 Project Overview**
 
@@ -20,7 +20,7 @@ It leverages **LocalStack** (a cloud service emulator) tosimulate an AWS environ
 *   **Tools:** AWS CLI v2, WSL 2 (Ubuntu)
     
 
-**🚀 Key Features**
+## **🚀 Key Features**
 
 *   **Zero-Cost Simulation:** Fully mimics AWS APIs locally; no credit card required.
     
@@ -34,7 +34,7 @@ It leverages **LocalStack** (a cloud service emulator) tosimulate an AWS environ
 *   **Scheduled Execution:** Runs automatically at set intervals using system Cron daemons.
     
 
-**⚙️ Setup & Installation**
+## **⚙️ Setup & Installation**
 
 **1. Prerequisites**
 
@@ -115,7 +115,7 @@ chmod +x audit_script.sh
 column -t -s, aws-resource-usage.csv
 ```
 
-**Automated Execution (Cron Job)**
+## **Automated Execution (Cron Job)**
 
 To schedule the audit to run **every minute**:
 
@@ -128,7 +128,7 @@ To schedule the audit to run **every minute**:
 * * * * * /home/user/devops/audit\_script.sh
 ```
 
-**🧠 What I Learned (TheDevOps Journey)**
+## **🧠 What I Learned (TheDevOps Journey)**
 
 **1. Cost-Effective Cloud Practice**
 
@@ -142,7 +142,7 @@ Instead of manually checking the AWS Console, I wrote ascript to "describe" the 
 
 I moved from manually running scripts to "set it andforget it" using **Cron**. I learned how system daemons work and theimportance of environment variables when running background jobs.
 
-**⚠️ Challenges & Resolutions**
+## **⚠️ Challenges & Resolutions**
 
 **Challenge 1: The "Real Cloud" Risk**
 
@@ -158,7 +158,7 @@ I moved from manually running scripts to "set it andforget it" using **Cron**. I
 
 ---
 
-**🔮 Future Scope**
+## **🔮 Future Scope**
 
 *   **Alerting:** Add a feature to send an email or Slack notification if an EC2 instance is left running for more than 24 hours.
     
